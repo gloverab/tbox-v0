@@ -11,7 +11,7 @@ const AppContainer: React.FC = () => {
       <Header />
       <div className='panel-container'>
         <PanelOne />
-        <PanelTwo />
+        {/* <PanelTwo /> */}
         <PanelThree />
       </div>
     </div>

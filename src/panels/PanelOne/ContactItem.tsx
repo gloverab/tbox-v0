@@ -6,10 +6,10 @@ interface IContactItemProps {
 
 const ContactItem: React.FC<IContactItemProps> = ({ item }) => {
   return (
-    <div className='contact-item'>
+    <button className='contact-item'>
       <span>&#9786; - </span>
       <span>{item.name}</span>
-    </div>
+    </button>
   )
 }
 
