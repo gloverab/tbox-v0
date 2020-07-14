@@ -12,26 +12,29 @@ const Header: React.FC = () => {
     return null
   }, [])
 
+  const handleProfileClick = useCallback((e) => {
+    return null
+  }, [])
+
   return (
     <div className='header'>
       <div className='header-left'>
       <SectionHeader text='Inbox' />
-        <span>Inbox</span>
       </div>
       <div className='header-right'>
-        <form onSubmit={handleSubmit}>
+        <form className='header-search-form' onSubmit={handleSubmit}>
           <input
+            className='header-search'
             type='text'
             value={searchVal}
             onChange={handleChange}
-            placeholder='search'
+            placeholder='Search mail'
           />
-          <input type='submit' value='submit' />
         </form>
         <div className='icons'>
-          <span>1</span>
-          <span>2</span>
-          <span>3</span>
+          <button className='profile-circle' onClick={handleProfileClick}>
+            <span>AG</span>
+          </button>
         </div>
       </div>
     </div>

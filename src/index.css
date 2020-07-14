@@ -19,7 +19,7 @@ button {
   font-size: 1rem;
   text-align: left;
   margin: 0;
-  transition: background 100ms ease-in-out, transform 150ms ease;
+  transition: background 50ms ease, transform 200ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
